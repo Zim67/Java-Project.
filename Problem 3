@@ -1,0 +1,42 @@
+// Money.java
+public class Money {
+    private double amount;
+
+    public Money(double amount) {
+        this.amount = amount;
+    }
+
+    // Implement copy constructor, equals, compareTo, and toString methods.
+}
+
+// Address.java
+public class Address {
+    // Implement the Address class based on your assignment's requirements.
+}
+
+// Person.java
+public class Person {
+    // Implement the Person class based on your assignment's requirements.
+}
+
+// CreditCard.java
+public class CreditCard {
+    private Person owner;
+    private Money balance;
+    private Money creditLimit;
+
+    public CreditCard(Person owner, Money creditLimit) {
+        this.owner = owner;
+        this.creditLimit = creditLimit;
+        this.balance = new Money(0.0); // Initialize balance to zero.
+    }
+
+    // Implement accessor methods, charge, payment methods, and any other required methods.
+}
+
+// CreditCardDemo.java
+public class CreditCardDemo {
+    public static void main(String[] args) {
+        // Create instances of Person, Money, and CreditCard, and test their methods.
+    }
+}
