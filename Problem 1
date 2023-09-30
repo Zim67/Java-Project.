@@ -1,0 +1,37 @@
+// MyPoint.java
+public class MyPoint {
+    private int x;
+    private int y;
+
+    public MyPoint(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    // Implement getters, setters, and other necessary methods.
+}
+
+// MyLine.java
+public class MyLine {
+    private MyPoint begin;
+    private MyPoint end;
+
+    public MyLine(MyPoint begin, MyPoint end) {
+        this.begin = begin;
+        this.end = end;
+    }
+
+    // Implement methods to calculate the length of the line, getters, setters, etc.
+}
+
+// TestMyLine.java
+public class TestMyLine {
+    public static void main(String[] args) {
+        MyPoint point1 = new MyPoint(1, 2);
+        MyPoint point2 = new MyPoint(4, 6);
+
+        MyLine line = new MyLine(point1, point2);
+
+        // Test the MyLine methods and print the results.
+    }
+}
